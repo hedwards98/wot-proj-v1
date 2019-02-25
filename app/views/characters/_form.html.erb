@@ -1,0 +1,732 @@
+<%= form_with(model: character, local: true) do |form| %>
+  <% if character.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(character.errors.count, "error") %> prohibited this character from being saved:</h2>
+
+      <ul>
+      <% character.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :char_name %>
+    <%= form.text_field :char_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_name %>
+    <%= form.text_field :player_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class %>
+    <%= form.text_field :class %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class_2 %>
+    <%= form.text_field :class_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class_3 %>
+    <%= form.text_field :class_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class_4 %>
+    <%= form.text_field :class_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class_5 %>
+    <%= form.text_field :class_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :background %>
+    <%= form.text_field :background %>
+  </div>
+
+  <div class="field">
+    <%= form.label :level %>
+    <%= form.number_field :level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size %>
+    <%= form.text_field :size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eyes %>
+    <%= form.text_field :eyes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hair %>
+    <%= form.text_field :hair %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skin %>
+    <%= form.text_field :skin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :str %>
+    <%= form.number_field :str %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dex %>
+    <%= form.number_field :dex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :int %>
+    <%= form.number_field :int %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wis %>
+    <%= form.number_field :wis %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cha %>
+    <%= form.number_field :cha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hp_max %>
+    <%= form.number_field :hp_max %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hp_current %>
+    <%= form.number_field :hp_current %>
+  </div>
+
+  <div class="field">
+    <%= form.label :defense %>
+    <%= form.number_field :defense %>
+  </div>
+
+  <div class="field">
+    <%= form.label :speed %>
+    <%= form.number_field :speed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :initiative %>
+    <%= form.number_field :initiative %>
+  </div>
+
+  <div class="field">
+    <%= form.label :base_attack %>
+    <%= form.number_field :base_attack %>
+  </div>
+
+  <div class="field">
+    <%= form.label :melee_attack %>
+    <%= form.number_field :melee_attack %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ranged_attack %>
+    <%= form.number_field :ranged_attack %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fortitude %>
+    <%= form.number_field :fortitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reflex %>
+    <%= form.number_field :reflex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :will %>
+    <%= form.number_field :will %>
+  </div>
+
+  <div class="field">
+    <%= form.label :animal_empathy %>
+    <%= form.number_field :animal_empathy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :appraise %>
+    <%= form.number_field :appraise %>
+  </div>
+
+  <div class="field">
+    <%= form.label :balance %>
+    <%= form.number_field :balance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bluff %>
+    <%= form.number_field :bluff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :climb %>
+    <%= form.number_field :climb %>
+  </div>
+
+  <div class="field">
+    <%= form.label :craft_1 %>
+    <%= form.number_field :craft_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :craft_1_focus %>
+    <%= form.text_field :craft_1_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :craft_2 %>
+    <%= form.number_field :craft_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :craft_2_focus %>
+    <%= form.text_field :craft_2_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :craft_3 %>
+    <%= form.number_field :craft_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :craft_3_focus %>
+    <%= form.text_field :craft_3_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :decipher_script %>
+    <%= form.number_field :decipher_script %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diplomacy %>
+    <%= form.number_field :diplomacy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disable_device %>
+    <%= form.number_field :disable_device %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disguise %>
+    <%= form.number_field :disguise %>
+  </div>
+
+  <div class="field">
+    <%= form.label :escape_artist %>
+    <%= form.number_field :escape_artist %>
+  </div>
+
+  <div class="field">
+    <%= form.label :forgery %>
+    <%= form.number_field :forgery %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gather_information %>
+    <%= form.number_field :gather_information %>
+  </div>
+
+  <div class="field">
+    <%= form.label :handle_animal %>
+    <%= form.number_field :handle_animal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heal %>
+    <%= form.number_field :heal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hide %>
+    <%= form.number_field :hide %>
+  </div>
+
+  <div class="field">
+    <%= form.label :innuendo %>
+    <%= form.number_field :innuendo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :intuit_direction %>
+    <%= form.number_field :intuit_direction %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jump %>
+    <%= form.number_field :jump %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_age %>
+    <%= form.number_field :knowledge_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_arcana %>
+    <%= form.number_field :knowledge_arcana %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_architecture %>
+    <%= form.number_field :knowledge_architecture %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_blight %>
+    <%= form.number_field :knowledge_blight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_geography %>
+    <%= form.number_field :knowledge_geography %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_history %>
+    <%= form.number_field :knowledge_history %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_local %>
+    <%= form.number_field :knowledge_local %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_nature %>
+    <%= form.number_field :knowledge_nature %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_nobility %>
+    <%= form.number_field :knowledge_nobility %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_history %>
+    <%= form.number_field :knowledge_history %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_custom_1 %>
+    <%= form.number_field :knowledge_custom_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_custom_1_focus %>
+    <%= form.text_field :knowledge_custom_1_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_custom_2 %>
+    <%= form.number_field :knowledge_custom_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_custom_2_focus %>
+    <%= form.text_field :knowledge_custom_2_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_custom_3 %>
+    <%= form.number_field :knowledge_custom_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knowledge_custom_3_focus %>
+    <%= form.text_field :knowledge_custom_3_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :listen %>
+    <%= form.number_field :listen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :move_silently %>
+    <%= form.number_field :move_silently %>
+  </div>
+
+  <div class="field">
+    <%= form.label :open_lock %>
+    <%= form.number_field :open_lock %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_1 %>
+    <%= form.number_field :perform_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_1_focus %>
+    <%= form.text_field :perform_1_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_2 %>
+    <%= form.number_field :perform_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_2_focus %>
+    <%= form.text_field :perform_2_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_3 %>
+    <%= form.number_field :perform_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_3_focus %>
+    <%= form.text_field :perform_3_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_4 %>
+    <%= form.number_field :perform_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_4_focus %>
+    <%= form.text_field :perform_4_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_5 %>
+    <%= form.number_field :perform_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_5_focus %>
+    <%= form.text_field :perform_5_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_6 %>
+    <%= form.number_field :perform_6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perform_6_focus %>
+    <%= form.text_field :perform_6_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pick_pocket %>
+    <%= form.number_field :pick_pocket %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession_1 %>
+    <%= form.number_field :profession_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession_1_focus %>
+    <%= form.text_field :profession_1_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession_2 %>
+    <%= form.number_field :profession_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession_2_focus %>
+    <%= form.text_field :profession_2_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession_3 %>
+    <%= form.number_field :profession_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession_3_focus %>
+    <%= form.text_field :profession_3_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :read_lips %>
+    <%= form.number_field :read_lips %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ride_1 %>
+    <%= form.number_field :ride_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ride_1_focus %>
+    <%= form.text_field :ride_1_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ride_2 %>
+    <%= form.number_field :ride_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ride_2_focus %>
+    <%= form.text_field :ride_2_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ride_3 %>
+    <%= form.number_field :ride_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ride_3_focus %>
+    <%= form.text_field :ride_3_focus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :search %>
+    <%= form.number_field :search %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sense_motive %>
+    <%= form.number_field :sense_motive %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spot %>
+    <%= form.number_field :spot %>
+  </div>
+
+  <div class="field">
+    <%= form.label :swim %>
+    <%= form.number_field :swim %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tumble %>
+    <%= form.number_field :tumble %>
+  </div>
+
+  <div class="field">
+    <%= form.label :use_rope %>
+    <%= form.number_field :use_rope %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weavesight %>
+    <%= form.number_field :weavesight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wilderness_lore %>
+    <%= form.number_field :wilderness_lore %>
+  </div>
+
+  <div class="field">
+    <%= form.label :money_cp %>
+    <%= form.number_field :money_cp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :money_sp %>
+    <%= form.number_field :money_sp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :money_mk %>
+    <%= form.number_field :money_mk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :money_gc %>
+    <%= form.number_field :money_gc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_load %>
+    <%= form.number_field :light_load %>
+  </div>
+
+  <div class="field">
+    <%= form.label :medium_load %>
+    <%= form.number_field :medium_load %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heavy_load %>
+    <%= form.number_field :heavy_load %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_load %>
+    <%= form.number_field :max_load %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_save_mod %>
+    <%= form.number_field :weave_save_mod %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_0 %>
+    <%= form.number_field :weave_perday_0 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_1 %>
+    <%= form.number_field :weave_perday_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_2 %>
+    <%= form.number_field :weave_perday_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_3 %>
+    <%= form.number_field :weave_perday_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_4 %>
+    <%= form.number_field :weave_perday_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_5 %>
+    <%= form.number_field :weave_perday_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_6 %>
+    <%= form.number_field :weave_perday_6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_7 %>
+    <%= form.number_field :weave_perday_7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_8 %>
+    <%= form.number_field :weave_perday_8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_perday_9 %>
+    <%= form.number_field :weave_perday_9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_0 %>
+    <%= form.number_field :weave_bonus_0 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_1 %>
+    <%= form.number_field :weave_bonus_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_2 %>
+    <%= form.number_field :weave_bonus_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_3 %>
+    <%= form.number_field :weave_bonus_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_4 %>
+    <%= form.number_field :weave_bonus_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_5 %>
+    <%= form.number_field :weave_bonus_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_6 %>
+    <%= form.number_field :weave_bonus_6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_7 %>
+    <%= form.number_field :weave_bonus_7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_8 %>
+    <%= form.number_field :weave_bonus_8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weave_bonus_9 %>
+    <%= form.number_field :weave_bonus_9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :language_1 %>
+    <%= form.text_field :language_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :language_2 %>
+    <%= form.text_field :language_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :language_3 %>
+    <%= form.text_field :language_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :language_4 %>
+    <%= form.text_field :language_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :language_5 %>
+    <%= form.text_field :language_5 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

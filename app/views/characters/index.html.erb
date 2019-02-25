@@ -1,0 +1,311 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Characters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Char name</th>
+      <th>Player name</th>
+      <th>Class</th>
+      <th>Class 2</th>
+      <th>Class 3</th>
+      <th>Class 4</th>
+      <th>Class 5</th>
+      <th>Background</th>
+      <th>Level</th>
+      <th>Size</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Weight</th>
+      <th>Eyes</th>
+      <th>Hair</th>
+      <th>Skin</th>
+      <th>Str</th>
+      <th>Dex</th>
+      <th>Int</th>
+      <th>Wis</th>
+      <th>Cha</th>
+      <th>Hp max</th>
+      <th>Hp current</th>
+      <th>Defense</th>
+      <th>Speed</th>
+      <th>Initiative</th>
+      <th>Base attack</th>
+      <th>Melee attack</th>
+      <th>Ranged attack</th>
+      <th>Fortitude</th>
+      <th>Reflex</th>
+      <th>Will</th>
+      <th>Animal empathy</th>
+      <th>Appraise</th>
+      <th>Balance</th>
+      <th>Bluff</th>
+      <th>Climb</th>
+      <th>Craft 1</th>
+      <th>Craft 1 focus</th>
+      <th>Craft 2</th>
+      <th>Craft 2 focus</th>
+      <th>Craft 3</th>
+      <th>Craft 3 focus</th>
+      <th>Decipher script</th>
+      <th>Diplomacy</th>
+      <th>Disable device</th>
+      <th>Disguise</th>
+      <th>Escape artist</th>
+      <th>Forgery</th>
+      <th>Gather information</th>
+      <th>Handle animal</th>
+      <th>Heal</th>
+      <th>Hide</th>
+      <th>Innuendo</th>
+      <th>Intuit direction</th>
+      <th>Jump</th>
+      <th>Knowledge age</th>
+      <th>Knowledge arcana</th>
+      <th>Knowledge architecture</th>
+      <th>Knowledge blight</th>
+      <th>Knowledge geography</th>
+      <th>Knowledge history</th>
+      <th>Knowledge local</th>
+      <th>Knowledge nature</th>
+      <th>Knowledge nobility</th>
+      <th>Knowledge history</th>
+      <th>Knowledge custom 1</th>
+      <th>Knowledge custom 1 focus</th>
+      <th>Knowledge custom 2</th>
+      <th>Knowledge custom 2 focus</th>
+      <th>Knowledge custom 3</th>
+      <th>Knowledge custom 3 focus</th>
+      <th>Listen</th>
+      <th>Move silently</th>
+      <th>Open lock</th>
+      <th>Perform 1</th>
+      <th>Perform 1 focus</th>
+      <th>Perform 2</th>
+      <th>Perform 2 focus</th>
+      <th>Perform 3</th>
+      <th>Perform 3 focus</th>
+      <th>Perform 4</th>
+      <th>Perform 4 focus</th>
+      <th>Perform 5</th>
+      <th>Perform 5 focus</th>
+      <th>Perform 6</th>
+      <th>Perform 6 focus</th>
+      <th>Pick pocket</th>
+      <th>Profession 1</th>
+      <th>Profession 1 focus</th>
+      <th>Profession 2</th>
+      <th>Profession 2 focus</th>
+      <th>Profession 3</th>
+      <th>Profession 3 focus</th>
+      <th>Read lips</th>
+      <th>Ride 1</th>
+      <th>Ride 1 focus</th>
+      <th>Ride 2</th>
+      <th>Ride 2 focus</th>
+      <th>Ride 3</th>
+      <th>Ride 3 focus</th>
+      <th>Search</th>
+      <th>Sense motive</th>
+      <th>Spot</th>
+      <th>Swim</th>
+      <th>Tumble</th>
+      <th>Use rope</th>
+      <th>Weavesight</th>
+      <th>Wilderness lore</th>
+      <th>Money cp</th>
+      <th>Money sp</th>
+      <th>Money mk</th>
+      <th>Money gc</th>
+      <th>Light load</th>
+      <th>Medium load</th>
+      <th>Heavy load</th>
+      <th>Max load</th>
+      <th>Weave save mod</th>
+      <th>Weave perday 0</th>
+      <th>Weave perday 1</th>
+      <th>Weave perday 2</th>
+      <th>Weave perday 3</th>
+      <th>Weave perday 4</th>
+      <th>Weave perday 5</th>
+      <th>Weave perday 6</th>
+      <th>Weave perday 7</th>
+      <th>Weave perday 8</th>
+      <th>Weave perday 9</th>
+      <th>Weave bonus 0</th>
+      <th>Weave bonus 1</th>
+      <th>Weave bonus 2</th>
+      <th>Weave bonus 3</th>
+      <th>Weave bonus 4</th>
+      <th>Weave bonus 5</th>
+      <th>Weave bonus 6</th>
+      <th>Weave bonus 7</th>
+      <th>Weave bonus 8</th>
+      <th>Weave bonus 9</th>
+      <th>Language 1</th>
+      <th>Language 2</th>
+      <th>Language 3</th>
+      <th>Language 4</th>
+      <th>Language 5</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <td><%= character.char_name %></td>
+        <td><%= character.player_name %></td>
+        <td><%= character.class %></td>
+        <td><%= character.class_2 %></td>
+        <td><%= character.class_3 %></td>
+        <td><%= character.class_4 %></td>
+        <td><%= character.class_5 %></td>
+        <td><%= character.background %></td>
+        <td><%= character.level %></td>
+        <td><%= character.size %></td>
+        <td><%= character.age %></td>
+        <td><%= character.gender %></td>
+        <td><%= character.weight %></td>
+        <td><%= character.eyes %></td>
+        <td><%= character.hair %></td>
+        <td><%= character.skin %></td>
+        <td><%= character.str %></td>
+        <td><%= character.dex %></td>
+        <td><%= character.int %></td>
+        <td><%= character.wis %></td>
+        <td><%= character.cha %></td>
+        <td><%= character.hp_max %></td>
+        <td><%= character.hp_current %></td>
+        <td><%= character.defense %></td>
+        <td><%= character.speed %></td>
+        <td><%= character.initiative %></td>
+        <td><%= character.base_attack %></td>
+        <td><%= character.melee_attack %></td>
+        <td><%= character.ranged_attack %></td>
+        <td><%= character.fortitude %></td>
+        <td><%= character.reflex %></td>
+        <td><%= character.will %></td>
+        <td><%= character.animal_empathy %></td>
+        <td><%= character.appraise %></td>
+        <td><%= character.balance %></td>
+        <td><%= character.bluff %></td>
+        <td><%= character.climb %></td>
+        <td><%= character.craft_1 %></td>
+        <td><%= character.craft_1_focus %></td>
+        <td><%= character.craft_2 %></td>
+        <td><%= character.craft_2_focus %></td>
+        <td><%= character.craft_3 %></td>
+        <td><%= character.craft_3_focus %></td>
+        <td><%= character.decipher_script %></td>
+        <td><%= character.diplomacy %></td>
+        <td><%= character.disable_device %></td>
+        <td><%= character.disguise %></td>
+        <td><%= character.escape_artist %></td>
+        <td><%= character.forgery %></td>
+        <td><%= character.gather_information %></td>
+        <td><%= character.handle_animal %></td>
+        <td><%= character.heal %></td>
+        <td><%= character.hide %></td>
+        <td><%= character.innuendo %></td>
+        <td><%= character.intuit_direction %></td>
+        <td><%= character.jump %></td>
+        <td><%= character.knowledge_age %></td>
+        <td><%= character.knowledge_arcana %></td>
+        <td><%= character.knowledge_architecture %></td>
+        <td><%= character.knowledge_blight %></td>
+        <td><%= character.knowledge_geography %></td>
+        <td><%= character.knowledge_history %></td>
+        <td><%= character.knowledge_local %></td>
+        <td><%= character.knowledge_nature %></td>
+        <td><%= character.knowledge_nobility %></td>
+        <td><%= character.knowledge_history %></td>
+        <td><%= character.knowledge_custom_1 %></td>
+        <td><%= character.knowledge_custom_1_focus %></td>
+        <td><%= character.knowledge_custom_2 %></td>
+        <td><%= character.knowledge_custom_2_focus %></td>
+        <td><%= character.knowledge_custom_3 %></td>
+        <td><%= character.knowledge_custom_3_focus %></td>
+        <td><%= character.listen %></td>
+        <td><%= character.move_silently %></td>
+        <td><%= character.open_lock %></td>
+        <td><%= character.perform_1 %></td>
+        <td><%= character.perform_1_focus %></td>
+        <td><%= character.perform_2 %></td>
+        <td><%= character.perform_2_focus %></td>
+        <td><%= character.perform_3 %></td>
+        <td><%= character.perform_3_focus %></td>
+        <td><%= character.perform_4 %></td>
+        <td><%= character.perform_4_focus %></td>
+        <td><%= character.perform_5 %></td>
+        <td><%= character.perform_5_focus %></td>
+        <td><%= character.perform_6 %></td>
+        <td><%= character.perform_6_focus %></td>
+        <td><%= character.pick_pocket %></td>
+        <td><%= character.profession_1 %></td>
+        <td><%= character.profession_1_focus %></td>
+        <td><%= character.profession_2 %></td>
+        <td><%= character.profession_2_focus %></td>
+        <td><%= character.profession_3 %></td>
+        <td><%= character.profession_3_focus %></td>
+        <td><%= character.read_lips %></td>
+        <td><%= character.ride_1 %></td>
+        <td><%= character.ride_1_focus %></td>
+        <td><%= character.ride_2 %></td>
+        <td><%= character.ride_2_focus %></td>
+        <td><%= character.ride_3 %></td>
+        <td><%= character.ride_3_focus %></td>
+        <td><%= character.search %></td>
+        <td><%= character.sense_motive %></td>
+        <td><%= character.spot %></td>
+        <td><%= character.swim %></td>
+        <td><%= character.tumble %></td>
+        <td><%= character.use_rope %></td>
+        <td><%= character.weavesight %></td>
+        <td><%= character.wilderness_lore %></td>
+        <td><%= character.money_cp %></td>
+        <td><%= character.money_sp %></td>
+        <td><%= character.money_mk %></td>
+        <td><%= character.money_gc %></td>
+        <td><%= character.light_load %></td>
+        <td><%= character.medium_load %></td>
+        <td><%= character.heavy_load %></td>
+        <td><%= character.max_load %></td>
+        <td><%= character.weave_save_mod %></td>
+        <td><%= character.weave_perday_0 %></td>
+        <td><%= character.weave_perday_1 %></td>
+        <td><%= character.weave_perday_2 %></td>
+        <td><%= character.weave_perday_3 %></td>
+        <td><%= character.weave_perday_4 %></td>
+        <td><%= character.weave_perday_5 %></td>
+        <td><%= character.weave_perday_6 %></td>
+        <td><%= character.weave_perday_7 %></td>
+        <td><%= character.weave_perday_8 %></td>
+        <td><%= character.weave_perday_9 %></td>
+        <td><%= character.weave_bonus_0 %></td>
+        <td><%= character.weave_bonus_1 %></td>
+        <td><%= character.weave_bonus_2 %></td>
+        <td><%= character.weave_bonus_3 %></td>
+        <td><%= character.weave_bonus_4 %></td>
+        <td><%= character.weave_bonus_5 %></td>
+        <td><%= character.weave_bonus_6 %></td>
+        <td><%= character.weave_bonus_7 %></td>
+        <td><%= character.weave_bonus_8 %></td>
+        <td><%= character.weave_bonus_9 %></td>
+        <td><%= character.language_1 %></td>
+        <td><%= character.language_2 %></td>
+        <td><%= character.language_3 %></td>
+        <td><%= character.language_4 %></td>
+        <td><%= character.language_5 %></td>
+        <td><%= link_to 'Show', character %></td>
+        <td><%= link_to 'Edit', edit_character_path(character) %></td>
+        <td><%= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character', new_character_path %>

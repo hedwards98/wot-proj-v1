@@ -1,0 +1,2 @@
+module SitenavHelper
+end

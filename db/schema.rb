@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2019_02_24_014110) do
   create_table "characters", force: :cascade do |t|
     t.string "char_name"
     t.string "player_name"
-    t.string "class"
+    t.string "class_1"
     t.string "class_2"
     t.string "class_3"
     t.string "class_4"

@@ -1,26 +1,51 @@
 <%= form_with(model: character, local: true) do |form| %>
-  <% if character.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(character.errors.count, "error") %> prohibited this character from being saved:</h2>
 
-      <ul>
-      <% character.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+  <%= link_to changeback_path(background: "Aiel") do %>
+  <div class="btn btn-default">Aiel</div>
   <% end %>
 
-  <%= link_to creator_class_path do, Character.update(@character.id, :background => "Aiel") %>
-  <div class="btn btn-default"></div>
+  <%= link_to changeback_path(background: "Atha'an Miere") do %>
+  <div class="btn btn-default">Atha'an Miere</div>
   <% end %>
 
-  <%= link_to creator_class_path do, Character.update(@character.id, :background => "Atha'an Miere") %>
-  <div class="btn btn-default"></div>
+  <%= link_to changeback_path(background: "Borderlander") do %>
+  <div class="btn btn-default">Borderlander</div>
   <% end %>
 
-  <%= link_to creator_class_path do, Character.update(@character.id, :background => "Atha'an Miere") %>
-  <div class="btn btn-default"></div>
+  <%= link_to changeback_path(background: "Cairhienen") do %>
+  <div class="btn btn-default">Cairhienen</div>
+  <% end %>
+
+  <%= link_to changeback_path(background: "Domani") do %>
+  <div class="btn btn-default">Domani</div>
+  <% end %>
+
+  <%= link_to changeback_path(background: "Ebou Dari") do %>
+  <div class="btn btn-default">Ebou Dari</div>
+  <% end %>
+
+  <%= link_to changeback_path(background: "Illianer") do %>
+  <div class="btn btn-default">Illianer</div>
+  <% end %>
+
+  <%= link_to changeback_path(background: "Midlander") do %>
+  <div class="btn btn-default">Midlander</div>
+  <% end %>
+
+  <%= link_to changeback_path(background: "Ogier") do %>
+  <div class="btn btn-default">Ogier</div>
+  <% end %>
+
+  <%= link_to changeback_path(background: "Tairen") do %>
+  <div class="btn btn-default">Tairen</div>
+  <% end %>
+
+  <%= link_to changeback_path(background: "Tar Valoner") do %>
+  <div class="btn btn-default">Tar Valoner</div>
+  <% end %>
+
+  <%= link_to changeback_path(background: "Taraboner") do %>
+  <div class="btn btn-default">Taraboner</div>
   <% end %>
 
 <% end %>

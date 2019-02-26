@@ -1,5 +1,7 @@
 class CreatorController < ApplicationController
+
   def create_method
+    @character = Character.create
   end
 
   def templates

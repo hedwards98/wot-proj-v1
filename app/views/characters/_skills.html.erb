@@ -1,0 +1,67 @@
+<%= form_tag showchar_path do %>
+
+  <div class="field">
+    <%= label_tag "Animal Empathy" %>
+    <%= number_field_tag :animal_empathy %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Appraise" %>
+    <%= number_field_tag :appraise %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Balance" %>
+    <%= number_field_tag :balance %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Bluff" %>
+    <%= number_field_tag :bluff %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Climb" %>
+    <%= number_field_tag :climb %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "1st Craft Focus" %>
+    <%= text_field_tag :craft_1_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :craft_1 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "2nd Craft Focus" %>
+    <%= text_field_tag :craft_2_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :craft_2 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Strength" %>
+    <%= number_field_tag :str %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Strength" %>
+    <%= number_field_tag :str %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Strength" %>
+    <%= number_field_tag :str %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Strength" %>
+    <%= number_field_tag :str %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag "Update" %>
+  </div>
+
+
+<% end %>

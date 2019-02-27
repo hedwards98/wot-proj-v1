@@ -1,0 +1,44 @@
+<%= form_with(model: character, local: true) do |form| %>
+
+
+	
+		<% if @character.background == "Aiel" %>
+		  <%= link_to changeclass1_path(class_1: "Algai'd'siswai") do %>
+		  <div class="btn btn-default">Algai'd'siswai</div>
+		  <% end %>
+		<% end %>
+
+
+		  <%= link_to changeclass1_path(class_1: "Armsman") do %>
+		  <div class="btn btn-default">Armsman</div>
+		  <% end %> 
+
+
+		<% if @character.background != "Ogier" %>
+		  <%= link_to changeclass1_path(class_1: "Initiate") do %>
+		  <div class="btn btn-default">Initiate</div>
+		  <% end %>
+		<% end %>  
+
+
+		  <%= link_to changeclass1_path(class_1: "Noble") do %>
+		  <div class="btn btn-default">Noble</div>
+		  <% end %>	
+
+
+		<% if @character.background != "Ogier" %>
+		  <%= link_to changeclass1_path(class_1: "Wilder") do %>
+		  <div class="btn btn-default">Wilder</div>
+		  <% end %>
+		<% end %>   
+
+
+		 <%= link_to changeclass1_path(class_1: "Woodsman") do %>
+		  <div class="btn btn-default">Woodsman</div>
+		  <% end %>			
+
+
+
+
+
+<% end %>

@@ -1,0 +1,34 @@
+<%= form_tag skills_path do %>
+
+
+  <div class="field">
+    <%= label_tag "Strength" %>
+    <%= number_field_tag :str %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Dexterity" %>
+    <%= number_field_tag :dex %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Intelligence" %>
+    <%= number_field_tag :int %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Wisdom" %>
+    <%= number_field_tag :wis %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Charisma" %>
+    <%= number_field_tag :cha %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag "Update" %>
+  </div>
+
+
+<% end %>

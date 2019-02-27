@@ -1,6 +1,10 @@
 class CharactersController < ApplicationController
   before_action :set_character, only: [:show, :edit, :update, :destroy]
 
+  def class_1
+    @character = Character.find(session[:id])
+  end
+
   # GET /characters
   # GET /characters.json
   def index

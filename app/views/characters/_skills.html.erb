@@ -1,4 +1,5 @@
-<%= form_tag showchar_path do %>
+<%= form_tag details_path do %>
+
 
   <div class="field">
     <%= label_tag "Animal Empathy" %>
@@ -40,24 +41,293 @@
   </div>
 
   <div class="field">
-    <%= label_tag "Strength" %>
-    <%= number_field_tag :str %>
+    <%= label_tag "3rd Craft Focus" %>
+    <%= text_field_tag :craft_3_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :craft_3 %>
   </div>
 
   <div class="field">
-    <%= label_tag "Strength" %>
-    <%= number_field_tag :str %>
+    <%= label_tag "Decipher Script" %>
+    <%= number_field_tag :decipher_script %>
   </div>
 
   <div class="field">
-    <%= label_tag "Strength" %>
-    <%= number_field_tag :str %>
+    <%= label_tag "Diplomacy" %>
+    <%= number_field_tag :diplomacy %>
   </div>
 
   <div class="field">
-    <%= label_tag "Strength" %>
-    <%= number_field_tag :str %>
+    <%= label_tag "Disable Device" %>
+    <%= number_field_tag :disable_device %>
   </div>
+
+  <div class="field">
+    <%= label_tag "Disguise" %>
+    <%= number_field_tag :disguise %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Escape Artist" %>
+    <%= number_field_tag :escape_artist %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Forgery" %>
+    <%= number_field_tag :forgery %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Gather Information" %>
+    <%= number_field_tag :gather_information %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Handle Animal" %>
+    <%= number_field_tag :handle_animal %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Heal" %>
+    <%= number_field_tag :heal %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Hide" %>
+    <%= number_field_tag :hide %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Innuendo" %>
+    <%= number_field_tag :innuendo %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Intuit Direction" %>
+    <%= number_field_tag :intuit_direction %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Jump" %>
+    <%= number_field_tag :jump %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Age of Legends)" %>
+    <%= number_field_tag :knowledge_age %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Arcana)" %>
+    <%= number_field_tag :knowledge_arcana %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Architecture and Engineering)" %>
+    <%= number_field_tag :knowledge_architecture %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Blight)" %>
+    <%= number_field_tag :knowledge_blight %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Geography)" %>
+    <%= number_field_tag :knowledge_geography %>
+  </div>
+
+<!-- There are two History columns. This may be a problem. -->
+  <div class="field">
+    <%= label_tag "Knowledge (History)" %>
+    <%= number_field_tag :knowledge_history %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Local)" %>
+    <%= number_field_tag :knowledge_local %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Nature)" %>
+    <%= number_field_tag :knowledge_nature %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Nobility)" %>
+    <%= number_field_tag :knowledge_nobility %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Custom 1)" %>
+    <%= text_field_tag :knowledge_custom_1_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :knowledge_custom_1 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Custom 2)" %>
+    <%= text_field_tag :knowledge_custom_2_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :knowledge_custom_2 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Knowledge (Custom 3)" %>
+    <%= text_field_tag :knowledge_custom_3_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :knowledge_custom_3 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Listen" %>
+    <%= number_field_tag :listen %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Move Silently" %>
+    <%= number_field_tag :move_silently %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Open Lock" %>
+    <%= number_field_tag :open_lock %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "1st Perform Focus" %>
+    <%= text_field_tag :perform_1_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :perform_1 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "2nd Perform Focus" %>
+    <%= text_field_tag :perform_2_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :perform_2 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "3rd Perform Focus" %>
+    <%= text_field_tag :perform_3_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :perform_3 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "4th Perform Focus" %>
+    <%= text_field_tag :perform_4_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :perform_4 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "5th Perform Focus" %>
+    <%= text_field_tag :perform_5_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :perform_5 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "6th Perform Focus" %>
+    <%= text_field_tag :perform_6_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :perform_6 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Pick Pocket" %>
+    <%= number_field_tag :pick_pocket %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "1st Profession Focus" %>
+    <%= text_field_tag :profession_1_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :profession_1 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "2nd Profession Focus" %>
+    <%= text_field_tag :profession_2_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :profession_2 %>         
+  </div>
+
+  <div class="field">
+    <%= label_tag "3rd Profession Focus" %>
+    <%= text_field_tag :profession_3_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :profession_3 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Read Lips" %>
+    <%= number_field_tag :read_lips %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "1st Ride Focus" %>
+    <%= text_field_tag :ride_1_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :ride_1 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "2nd Ride Focus" %>
+    <%= text_field_tag :ride_2_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :ride_2 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "3rd Ride Focus" %>
+    <%= text_field_tag :ride_3_focus %>
+    <%= label_tag "Score" %>
+    <%= number_field_tag :ride_3 %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Search" %>
+    <%= number_field_tag :search %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Sense Motive" %>
+    <%= number_field_tag :sense_motive %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Spot" %>
+    <%= number_field_tag :spot %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Swim" %>
+    <%= number_field_tag :swim %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Tumble" %>
+    <%= number_field_tag :tumble %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Use Rope" %>
+    <%= number_field_tag :use_rope %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Weavesight" %>
+    <%= number_field_tag :Weavesight %>
+  </div>
+
+  <div class="field">
+    <%= label_tag "Wilderness Lore" %>
+    <%= number_field_tag :wilderness_lore %>
+  </div>
+
 
   <div class="actions">
     <%= submit_tag "Update" %>

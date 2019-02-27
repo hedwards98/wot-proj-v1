@@ -1,0 +1,51 @@
+<%= form_tag showchar_path do %>
+
+	<div class="field">
+    <%= label_tag "Character Name" %>
+    <%= text_field_tag :char_name %>
+  	</div>
+
+  	<div class="field">
+    <%= label_tag "Player Name" %>
+    <%= text_field_tag :player_name %>
+  	</div>
+
+  	<div class="field">
+    <%= label_tag "Gender" %>
+    <%= text_field_tag :gender %>
+  	</div>
+
+  	<div class="field">
+    <%= label_tag "Weight (In Pounds)" %>
+    <%= number_field_tag :weight %>
+  	</div>
+
+  	<div class="field">
+    <%= label_tag "Eyes" %>
+    <%= text_field_tag :eyes %>
+  	</div>
+
+  	<div class="field">
+    <%= label_tag "Hair" %>
+    <%= text_field_tag :hair %>
+  	</div>
+
+  	<div class="field">
+    <%= label_tag "Skin" %>
+    <%= text_field_tag :skin %>
+  	</div>
+
+
+  	<!-- -->
+
+  	<div class="field">
+    <%= label_tag "blank" %>
+    <%= text_field_tag :blank %>
+  	</div>
+
+  	<div class="field">
+    <%= label_tag "blank" %>
+    <%= number_field_tag :blank %>
+  	</div>
+
+<% end %>

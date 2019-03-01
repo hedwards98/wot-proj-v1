@@ -20,6 +20,7 @@ class CreatorController < ApplicationController
     redirect_to class_path
   end
 
+  #main view
   def class_1
     @character = Character.find(session[:id])
   end
@@ -46,6 +47,7 @@ class CreatorController < ApplicationController
 
   def feats
   end
+
 
   def details
     character = Character.find(session[:id])
@@ -129,6 +131,7 @@ class CreatorController < ApplicationController
 
   end
 
+
   def equipment
   end
 
@@ -136,10 +139,18 @@ class CreatorController < ApplicationController
   end
 
   def show_character
+    character = Character.find(session[:id])
 
+    character.update(char_name: params[:char_name])
+    character.update(dex: params[:dex])
+    character.update(int: params[:int])
+    character.update(wis: params[:wis])
+    character.update(cha: params[:cha])
   end
 
   def edit_character
   end
+
+  
 
 end

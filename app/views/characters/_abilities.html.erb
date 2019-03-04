@@ -1,34 +1,154 @@
 <%= form_tag skills_path do %>
 
 
-  <div class="field">
-    <%= label_tag "Strength" %>
-    <%= number_field_tag :str %>
-  </div>
+<div class="container">
+<div class="row">
 
-  <div class="field">
-    <%= label_tag "Dexterity" %>
-    <%= number_field_tag :dex %>
-  </div>
 
-  <div class="field">
-    <%= label_tag "Intelligence" %>
-    <%= number_field_tag :int %>
-  </div>
+<!-- Strength -->
 
-  <div class="field">
-    <%= label_tag "Wisdom" %>
-    <%= number_field_tag :wis %>
-  </div>
 
-  <div class="field">
-    <%= label_tag "Charisma" %>
-    <%= number_field_tag :cha %>
-  </div>
+<div class="col-md-4">
 
+  <div class="well">
+
+    <center>
+
+        <h3>Strength</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <div class="form-group">
+          <%= label_tag "Score: " %>
+          <%= number_field_tag :str %>
+        </div>
+
+    </center>
+
+  </div>
+</div>
+
+
+<!-- Dexterity -->
+
+
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Dexterity</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <div class="form-group">
+          <%= label_tag "Score: " %>
+          <%= number_field_tag :dex %>
+        </div>
+
+    </center>
+
+  </div>
+</div>
+
+
+<!-- Intelligence -->
+
+
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Intelligence</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <div class="form-group">
+          <%= label_tag "Score: " %>
+          <%= number_field_tag :int %>
+        </div>
+
+    </center>
+
+  </div>
+</div>
+
+
+<!-- Wisdom -->
+
+
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Wisdom</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <div class="form-group">
+          <%= label_tag "Score: " %>
+          <%= number_field_tag :wis %>
+        </div>
+
+    </center>
+
+  </div>
+</div>
+
+
+<!-- Charisma -->
+
+
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Charisma</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <div class="form-group">
+          <%= label_tag "Score: " %>
+          <%= number_field_tag :cha %>
+        </div>
+
+    </center>
+
+  </div>
+</div>
+
+
+<!-- -->
+
+</div>
+</div>
+
+
+<!-- Update -->
+
+<center>
+  <br/>
   <div class="actions">
     <%= submit_tag "Update" %>
   </div>
+</center>
 
 
 <% end %>

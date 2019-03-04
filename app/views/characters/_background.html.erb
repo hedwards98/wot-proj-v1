@@ -1,51 +1,389 @@
 <%= form_with(model: character, local: true) do |form| %>
 
-  <%= link_to changeback_path(background: "Aiel") do %>
-  <div class="btn btn-default">Aiel</div>
-  <% end %>
 
-  <%= link_to changeback_path(background: "Atha'an Miere") do %>
-  <div class="btn btn-default">Atha'an Miere</div>
-  <% end %>
 
-  <%= link_to changeback_path(background: "Borderlander") do %>
-  <div class="btn btn-default">Borderlander</div>
-  <% end %>
+<div class="container">
+<div class="row">
+  <div class="col-md-2"></div>
+<div class="col-md-8">
 
-  <%= link_to changeback_path(background: "Cairhienen") do %>
-  <div class="btn btn-default">Cairhienen</div>
-  <% end %>
 
-  <%= link_to changeback_path(background: "Domani") do %>
-  <div class="btn btn-default">Domani</div>
-  <% end %>
+<!-- Aiel -->
 
-  <%= link_to changeback_path(background: "Ebou Dari") do %>
-  <div class="btn btn-default">Ebou Dari</div>
-  <% end %>
 
-  <%= link_to changeback_path(background: "Illianer") do %>
-  <div class="btn btn-default">Illianer</div>
-  <% end %>
+  <div class="well">
+    <center>
 
-  <%= link_to changeback_path(background: "Midlander") do %>
-  <div class="btn btn-default">Midlander</div>
-  <% end %>
+      <%= link_to changeback_path(background: "Aiel") do %>
+        <div class="tab btn btn-default">Choose Background</div>
+      <% end %>
 
-  <%= link_to changeback_path(background: "Ogier") do %>
-  <div class="btn btn-default">Ogier</div>
-  <% end %>
+      <a href="#" data-toggle="modal" data-target="#myModal_Aiel">
+        <span class="tab glyphicon glyphicon-plus"></span> More Info
+      </a>
 
-  <%= link_to changeback_path(background: "Tairen") do %>
-  <div class="btn btn-default">Tairen</div>
-  <% end %>
+    </center>
 
-  <%= link_to changeback_path(background: "Tar Valoner") do %>
-  <div class="btn btn-default">Tar Valoner</div>
-  <% end %>
+    <div class="modal fade" id="myModal_Aiel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Aiel</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Aiel") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
 
-  <%= link_to changeback_path(background: "Taraboner") do %>
-  <div class="btn btn-default">Taraboner</div>
-  <% end %>
+  </div>
+
+
+<!-- Atha'an Miere -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Atha">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Atha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Atha'an Miere</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Atha'an Miere") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Borderlander -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Borderlander">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Borderlander" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Borderlander</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Borderlander") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Cairhienen -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Cairhienen">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Cairhienen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Cairhienen</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Cairhienen") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Domani -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Domani">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Domani" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Domani</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Domani") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Ebou Dari -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Ebou">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Ebou" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Ebou Dari</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Ebou Dari") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Illianer -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Illianer">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Illianer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Illianer</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Illianer") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Midlander -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Midlander">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Midlander" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Midlander</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Midlander") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Ogier -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Ogier">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Ogier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Ogier</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Ogier") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Tairen -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Tairen">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Tairen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Tairen</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Tairen") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Tar Valoner -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Tar">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Tar Valoner</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Tar Valoner") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- Taraboner -->
+
+
+  <div class="well">
+    <a href="#" data-toggle="modal" data-target="#myModal_Taraboner">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+    <div class="modal fade" id="myModal_Taraboner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Taraboner</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+          <%= link_to changeback_path(background: "Taraboner") do %>
+            <div class="btn btn-default">Choose Background</div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+
+<!-- -->
+
+
+</div>
+  <div class="col-md-2"></div>
+</div>
+</div>
+
+
 
 <% end %>

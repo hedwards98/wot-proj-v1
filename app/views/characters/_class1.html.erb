@@ -1,44 +1,214 @@
 <%= form_with(model: character, local: true) do |form| %>
 
 
-	
-		<% if @character.background == "Aiel" %>
-		  <%= link_to changeclass1_path(class_1: "Algai'd'siswai") do %>
-		  <div class="btn btn-default">Algai'd'siswai</div>
-		  <% end %>
-		<% end %>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-2"></div>
+<div class="col-md-8">
 
 
-		  <%= link_to changeclass1_path(class_1: "Armsman") do %>
-		  <div class="btn btn-default">Armsman</div>
-		  <% end %> 
+<!-- Algai'd'siswai -->
 
 
-		<% if @character.background != "Ogier" %>
-		  <%= link_to changeclass1_path(class_1: "Initiate") do %>
-		  <div class="btn btn-default">Initiate</div>
-		  <% end %>
-		<% end %>  
+	<div class="well">
+		<a href="#" data-toggle="modal" data-target="#myModal_Algai">
+			<span class="glyphicon glyphicon-plus"></span> More Info
+		</a>
+
+		<div class="modal fade" id="myModal_Algai" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Algai'd'siswai</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>hey!!!</p>
+		      </div>
+		      <div class="modal-footer">
+		      	<% if @character.background == "Aiel" %>
+			      	<%= link_to changeclass1_path(class_1: "Algai'd'siswai") do %>
+			  			<div class="btn btn-default">Choose Class</div>
+			 		<% end %>
+			 	<% end %>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
 
 
-		  <%= link_to changeclass1_path(class_1: "Noble") do %>
-		  <div class="btn btn-default">Noble</div>
-		  <% end %>	
+
+<!-- Armsman -->
+		  
+	<div class="well">
+		<a href="#" data-toggle="modal" data-target="#myModal_Armsman">
+			<span class="glyphicon glyphicon-plus"></span> More Info
+		</a>
+
+		  <div class="modal fade" id="myModal_Armsman" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Armsman</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>hey!!!</p>
+		      </div>
+		      <div class="modal-footer">
+		      	<%= link_to changeclass1_path(class_1: "Armsman") do %>
+		  			<div class="btn btn-default">Choose Class</div>
+		  		<% end %>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
 
 
-		<% if @character.background != "Ogier" %>
-		  <%= link_to changeclass1_path(class_1: "Wilder") do %>
-		  <div class="btn btn-default">Wilder</div>
-		  <% end %>
-		<% end %>   
+<!-- Initiate -->
+
+	<div class="well">
+		<a href="#" data-toggle="modal" data-target="#myModal_Initiate">
+			<span class="glyphicon glyphicon-plus"></span> More Info
+		</a>
+
+		<div class="modal fade" id="myModal_Initiate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Initiate</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>hey!!!</p>
+		      </div>
+		      <div class="modal-footer">
+		      	<% if @character.background != "Ogier" %>
+			      	<%= link_to changeclass1_path(class_1: "Initiate") do %>
+			  			<div class="btn btn-default">Choose Class</div>
+			  		<% end %>
+			  	<% else %>
+			  		<p>[Class Unavailable. Ogier cannot Channel]</p>
+		  		<% end %>
+		      </div>
+		    </div>
+		  </div>
+		</div> 
+
+	</div>
 
 
-		 <%= link_to changeclass1_path(class_1: "Woodsman") do %>
-		  <div class="btn btn-default">Woodsman</div>
-		  <% end %>			
+<!-- Noble -->
+
+
+	<div class="well">
+		<a href="#" data-toggle="modal" data-target="#myModal_Noble">
+			<span class="glyphicon glyphicon-plus"></span> More Info
+		</a>
+
+		<div class="modal fade" id="myModal_Noble" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Noble</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>hey!!!</p>
+		      </div>
+		      <div class="modal-footer">
+			    <%= link_to changeclass1_path(class_1: "Noble") do %>
+		  			<div class="btn btn-default">Noble</div>
+		 		<% end %>
+		      </div>
+		    </div>
+		  </div>
+		</div> 
+
+	</div>	
 
 
 
 
+<!-- Wilder -->
+
+
+	<div class="well">
+		<a href="#" data-toggle="modal" data-target="#myModal_Wilder">
+			<span class="glyphicon glyphicon-plus"></span> More Info
+		</a>
+
+		<div class="modal fade" id="myModal_Wilder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Wilder</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>hey!!!</p>
+		      </div>
+		      <div class="modal-footer">
+		      	<% if @character.background != "Ogier" %>
+			      	<%= link_to changeclass1_path(class_1: "Wilder") do %>
+						<div class="btn btn-default">Choose Class</div>
+					<% end %>
+			  	<% else %>
+			  		<p>[Class Unavailable. Ogier cannot Channel]</p>
+		  		<% end %>
+		      </div>
+		    </div>
+		  </div>
+		</div> 
+
+	</div>
+
+
+
+<!-- Woodsman -->   
+
+
+	<div class="well">
+		<a href="#" data-toggle="modal" data-target="#myModal_Woodsman">
+			<span class="glyphicon glyphicon-plus"></span> More Info
+		</a>
+
+		<div class="modal fade" id="myModal_Woodsman" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Woodsman</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>hey!!!</p>
+		      </div>
+		      <div class="modal-footer">
+			    <%= link_to changeclass1_path(class_1: "Woodsman") do %>
+					<div class="btn btn-default">Choose Class</div>
+				<% end %>
+		      </div>
+		    </div>
+		  </div>
+		</div> 
+
+	</div>	
+
+
+
+<!-- -->			
+
+
+
+
+</div>
+	<div class="col-md-2"></div>
+</div>
+</div>
 
 <% end %>

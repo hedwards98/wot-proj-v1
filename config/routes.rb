@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   #Site Navigation
   root 'sitenav#home'
+  get 'home' => 'sitenav#home'
+  get 'about' => 'sitenav#about'
 
   #Create Method ==> Planned Character || Quick Character || Random Character
   get 'create' => 'creator#create_method'

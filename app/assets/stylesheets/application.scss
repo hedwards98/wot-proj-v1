@@ -18,3 +18,18 @@
 @import 'bootstrap';
 @import 'font-awesome';
 
+.contentmargin
+{
+	margin-top: 40px;
+}
+
+body
+{
+	background-image: url("mount.jpg");
+	background-color: #cccccc;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}

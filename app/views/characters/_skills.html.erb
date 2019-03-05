@@ -1,5 +1,70 @@
 <%= form_tag details_path do %>
 
+<div class="container">
+<div class="row">
+
+
+<!-- Strength Skills -->
+
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Algai'd'siswai</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <a href="#" data-toggle="modal" data-target="#myModal_str">
+      <span class="glyphicon glyphicon-plus"></span> More Info
+    </a>
+
+      </center>
+
+
+    <div class="modal fade" id="myModal_str" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Algai'd'siswai</h4>
+          </div>
+          <div class="modal-body">
+            <p>hey!!!</p>
+          </div>
+          <div class="modal-footer">
+            <% if @character.background == "Aiel" %>
+              <%= link_to changeclass1_path(class_1: "Algai'd'siswai") do %>
+              <div class="btn btn-default">Choose Class</div>
+          <% end %>
+        <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Dexterity Skills -->
+
+
+
+<!-- Intelligence Skills -->
+
+
+
+<!-- Wisdom Skills -->
+
+
+
+<!-- Charisma Skills -->
+
 
   <div class="field">
     <%= label_tag "Animal Empathy" %>

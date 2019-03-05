@@ -1,51 +1,66 @@
 <%= form_tag showchar_path do %>
 
-	<div class="field">
-    <%= label_tag "Character Name" %>
-    <%= text_field_tag :char_name %>
-  	</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-1"></div>
+<div class="col-md-10">
 
-  	<div class="field">
-    <%= label_tag "Player Name" %>
-    <%= text_field_tag :player_name %>
-  	</div>
+  <div class="panel panel-default">
 
-  	<div class="field">
-    <%= label_tag "Gender" %>
-    <%= text_field_tag :gender %>
-  	</div>
+    <div class="panel-body">
 
-  	<div class="field">
-    <%= label_tag "Weight (In Pounds)" %>
-    <%= number_field_tag :weight %>
-  	</div>
+    <center>
 
-  	<div class="field">
-    <%= label_tag "Eyes" %>
-    <%= text_field_tag :eyes %>
-  	</div>
+      <div class="form-group">
+      <%= label_tag "Character Name" %>
+      <br/>
+      <%= text_field_tag :char_name %>
+      </div>
 
-  	<div class="field">
-    <%= label_tag "Hair" %>
-    <%= text_field_tag :hair %>
-  	</div>
+      <div class="form-group">
+      <%= label_tag "Player Name" %>
+      <br/>
+      <%= text_field_tag :player_name %>
+      </div>
 
-  	<div class="field">
-    <%= label_tag "Skin" %>
-    <%= text_field_tag :skin %>
-  	</div>
+      <div class="form-group">
+      <%= label_tag "Gender" %>
+      <br/>
+      <%= text_field_tag :gender %>
+      </div>
 
+      <div class="form-group">
+      <%= label_tag "Weight (In Pounds)" %>
+      <br/>
+      <%= number_field_tag :weight %>
+      </div>
 
-  	<!-- -->
+      <div class="form-group">
+      <%= label_tag "Eyes" %>
+      <br/>
+      <%= text_field_tag :eyes %>
+      </div>
 
-  	<div class="field">
-    <%= label_tag "blank" %>
-    <%= text_field_tag :blank %>
-  	</div>
+      <div class="form-group">
+      <%= label_tag "Hair" %>
+      <br/>
+      <%= text_field_tag :hair %>
+      </div>
 
-  	<div class="field">
-    <%= label_tag "blank" %>
-    <%= number_field_tag :blank %>
-  	</div>
+      <div class="form-group">
+      <%= label_tag "Skin" %>
+      <br/>
+      <%= text_field_tag :skin %>
+      </div>
+
+    </center>
+
+    </div>
+  </div>
+
+</div>
+  <div class="col-md-1"></div>
+</div>
+</div>
 
 <% end %>

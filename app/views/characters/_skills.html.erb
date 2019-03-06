@@ -6,21 +6,22 @@
 
 <!-- Strength Skills -->
 
+
 <div class="col-md-4">
 
   <div class="well">
 
     <center>
 
-        <h3>Algai'd'siswai</h3>
+        <h3>Strength Skills</h3>
         <br />
 
         <p>bla bla bla bla bla</p>
         <br />  
 
         <a href="#" data-toggle="modal" data-target="#myModal_str">
-      <span class="glyphicon glyphicon-plus"></span> More Info
-    </a>
+        <span class="glyphicon glyphicon-plus"></span> View Skills
+        </a>
 
       </center>
 
@@ -30,17 +31,25 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Algai'd'siswai</h4>
+            <h4 class="modal-title" id="myModalLabel">Strength Skills</h4>
           </div>
           <div class="modal-body">
-            <p>hey!!!</p>
-          </div>
-          <div class="modal-footer">
-            <% if @character.background == "Aiel" %>
-              <%= link_to changeclass1_path(class_1: "Algai'd'siswai") do %>
-              <div class="btn btn-default">Choose Class</div>
-          <% end %>
-        <% end %>
+            
+            <div class="field">
+              <%= label_tag "Climb" %>
+              <%= number_field_tag :climb %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Jump" %>
+              <%= number_field_tag :jump %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Swim" %>
+              <%= number_field_tag :swim %>
+            </div>
+
           </div>
         </div>
       </div>
@@ -54,349 +63,535 @@
 <!-- Dexterity Skills -->
 
 
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Dexterity Skills</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <a href="#" data-toggle="modal" data-target="#myModal_dex">
+        <span class="glyphicon glyphicon-plus"></span> View Skills
+        </a>
+
+      </center>
+
+
+    <div class="modal fade" id="myModal_dex" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Dexterity Skills</h4>
+          </div>
+          <div class="modal-body">
+            
+            <div class="field">
+              <%= label_tag "Balance" %>
+              <%= number_field_tag :balance %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Escape Artist" %>
+              <%= number_field_tag :escape_artist %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Hide" %>
+              <%= number_field_tag :hide %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Move Silently" %>
+              <%= number_field_tag :move_silently %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Open Lock" %>
+              <%= number_field_tag :open_lock %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Pick Pocket" %>
+              <%= number_field_tag :pick_pocket %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Ride - Focus" %>
+              <%= text_field_tag :ride_1_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :ride_1 %>
+            </div>
+
+            <!-- <div class="field">
+              <%= label_tag "2nd Ride Focus" %>
+              <%= text_field_tag :ride_2_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :ride_2 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "3rd Ride Focus" %>
+              <%= text_field_tag :ride_3_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :ride_3 %>
+            </div> -->
+
+            <div class="field">
+              <%= label_tag "Tumble" %>
+              <%= number_field_tag :tumble %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Use Rope" %>
+              <%= number_field_tag :use_rope %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
 
 <!-- Intelligence Skills -->
+
+
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Intelligence Skills</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <a href="#" data-toggle="modal" data-target="#myModal_int">
+        <span class="glyphicon glyphicon-plus"></span> View Skills
+        </a>
+
+      </center>
+
+
+    <div class="modal fade" id="myModal_int" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Intelligence Skills</h4>
+          </div>
+          <div class="modal-body">
+            
+            <div class="field">
+              <%= label_tag "Appraise" %>
+              <%= number_field_tag :appraise %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Crafting Focus" %>
+              <%= text_field_tag :craft_1_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :craft_1 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "2nd Craft Focus" %>
+              <%= text_field_tag :craft_2_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :craft_2 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "3rd Craft Focus" %>
+              <%= text_field_tag :craft_3_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :craft_3 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Decipher Script" %>
+              <%= number_field_tag :decipher_script %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Disable Device" %>
+              <%= number_field_tag :disable_device %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Forgery" %>
+              <%= number_field_tag :forgery %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Age of Legends)" %>
+              <%= number_field_tag :knowledge_age %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Arcana)" %>
+              <%= number_field_tag :knowledge_arcana %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Architecture and Engineering)" %>
+              <%= number_field_tag :knowledge_architecture %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Blight)" %>
+              <%= number_field_tag :knowledge_blight %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Geography)" %>
+              <%= number_field_tag :knowledge_geography %>
+            </div>
+
+          <!-- There are two History columns. This may be a problem. -->
+            <div class="field">
+              <%= label_tag "Knowledge (History)" %>
+              <%= number_field_tag :knowledge_history %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Local)" %>
+              <%= number_field_tag :knowledge_local %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Nature)" %>
+              <%= number_field_tag :knowledge_nature %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Nobility)" %>
+              <%= number_field_tag :knowledge_nobility %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Custom)" %>
+              <%= text_field_tag :knowledge_custom_1_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :knowledge_custom_1 %>
+            </div>
+
+            <!-- <div class="field">
+              <%= label_tag "Knowledge (Custom 2)" %>
+              <%= text_field_tag :knowledge_custom_2_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :knowledge_custom_2 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Knowledge (Custom 3)" %>
+              <%= text_field_tag :knowledge_custom_3_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :knowledge_custom_3 %>
+            </div> -->
+
+            <div class="field">
+              <%= label_tag "Read Lips" %>
+              <%= number_field_tag :read_lips %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Search" %>
+              <%= number_field_tag :search %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
 
 
 <!-- Wisdom Skills -->
 
 
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Wisdom Skills</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <a href="#" data-toggle="modal" data-target="#myModal_wis">
+        <span class="glyphicon glyphicon-plus"></span> View Skills
+        </a>
+
+      </center>
+
+
+    <div class="modal fade" id="myModal_wis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Wisdom Skills</h4>
+          </div>
+          <div class="modal-body">
+            
+            <div class="field">
+              <%= label_tag "Heal" %>
+              <%= number_field_tag :heal %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Innuendo" %>
+              <%= number_field_tag :innuendo %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Intuit Direction" %>
+              <%= number_field_tag :intuit_direction %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Listen" %>
+              <%= number_field_tag :listen %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Profession - Focus" %>
+              <%= text_field_tag :profession_1_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :profession_1 %>
+            </div>
+
+            <!-- <div class="field">
+              <%= label_tag "2nd Profession Focus" %>
+              <%= text_field_tag :profession_2_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :profession_2 %>         
+            </div>
+
+            <div class="field">
+              <%= label_tag "3rd Profession Focus" %>
+              <%= text_field_tag :profession_3_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :profession_3 %>
+            </div> -->
+
+            <div class="field">
+              <%= label_tag "Sense Motive" %>
+              <%= number_field_tag :sense_motive %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Spot" %>
+              <%= number_field_tag :spot %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Wilderness Lore" %>
+              <%= number_field_tag :wilderness_lore %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
 
 <!-- Charisma Skills -->
 
 
-  <div class="field">
-    <%= label_tag "Animal Empathy" %>
-    <%= number_field_tag :animal_empathy %>
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Charisma Skills</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <a href="#" data-toggle="modal" data-target="#myModal_cha">
+        <span class="glyphicon glyphicon-plus"></span> View Skills
+        </a>
+
+      </center>
+
+
+    <div class="modal fade" id="myModal_cha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Charisma Skills</h4>
+          </div>
+          <div class="modal-body">
+            
+            <div class="field">
+              <%= label_tag "Animal Empathy" %>
+              <%= number_field_tag :animal_empathy %>
+            </div>
+            
+
+            <div class="field">
+              <%= label_tag "Bluff" %>
+              <%= number_field_tag :bluff %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Diplomacy" %>
+              <%= number_field_tag :diplomacy %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Disguise" %>
+              <%= number_field_tag :disguise %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Gather Information" %>
+              <%= number_field_tag :gather_information %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Handle Animal" %>
+              <%= number_field_tag :handle_animal %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "Perform - Focus" %>
+              <%= text_field_tag :perform_1_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :perform_1 %>
+            </div>
+
+            <!-- <div class="field">
+              <%= label_tag "2nd Perform Focus" %>
+              <%= text_field_tag :perform_2_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :perform_2 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "3rd Perform Focus" %>
+              <%= text_field_tag :perform_3_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :perform_3 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "4th Perform Focus" %>
+              <%= text_field_tag :perform_4_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :perform_4 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "5th Perform Focus" %>
+              <%= text_field_tag :perform_5_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :perform_5 %>
+            </div>
+
+            <div class="field">
+              <%= label_tag "6th Perform Focus" %>
+              <%= text_field_tag :perform_6_focus %>
+              <%= label_tag "Score" %>
+              <%= number_field_tag :perform_6 %>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="field">
-    <%= label_tag "Appraise" %>
-    <%= number_field_tag :appraise %>
+</div>
+
+
+
+<!-- Channeler Skills -->
+
+
+<% if @character.class_1 == "Initiate" || "Wilder" %>
+<div class="col-md-4">
+
+  <div class="well">
+
+    <center>
+
+        <h3>Channeler Skills</h3>
+        <br />
+
+        <p>bla bla bla bla bla</p>
+        <br />  
+
+        <a href="#" data-toggle="modal" data-target="#myModal_channel">
+        <span class="glyphicon glyphicon-plus"></span> View Skills
+        </a>
+
+      </center>
+
+
+    <div class="modal fade" id="myModal_channel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Channeler Skills</h4>
+          </div>
+          <div class="modal-body">
+            
+            <div class="field">
+              <%= label_tag "Weavesight" %>
+              <%= number_field_tag :Weavesight %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="field">
-    <%= label_tag "Balance" %>
-    <%= number_field_tag :balance %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Bluff" %>
-    <%= number_field_tag :bluff %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Climb" %>
-    <%= number_field_tag :climb %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "1st Craft Focus" %>
-    <%= text_field_tag :craft_1_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :craft_1 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "2nd Craft Focus" %>
-    <%= text_field_tag :craft_2_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :craft_2 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "3rd Craft Focus" %>
-    <%= text_field_tag :craft_3_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :craft_3 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Decipher Script" %>
-    <%= number_field_tag :decipher_script %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Diplomacy" %>
-    <%= number_field_tag :diplomacy %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Disable Device" %>
-    <%= number_field_tag :disable_device %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Disguise" %>
-    <%= number_field_tag :disguise %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Escape Artist" %>
-    <%= number_field_tag :escape_artist %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Forgery" %>
-    <%= number_field_tag :forgery %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Gather Information" %>
-    <%= number_field_tag :gather_information %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Handle Animal" %>
-    <%= number_field_tag :handle_animal %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Heal" %>
-    <%= number_field_tag :heal %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Hide" %>
-    <%= number_field_tag :hide %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Innuendo" %>
-    <%= number_field_tag :innuendo %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Intuit Direction" %>
-    <%= number_field_tag :intuit_direction %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Jump" %>
-    <%= number_field_tag :jump %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Age of Legends)" %>
-    <%= number_field_tag :knowledge_age %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Arcana)" %>
-    <%= number_field_tag :knowledge_arcana %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Architecture and Engineering)" %>
-    <%= number_field_tag :knowledge_architecture %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Blight)" %>
-    <%= number_field_tag :knowledge_blight %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Geography)" %>
-    <%= number_field_tag :knowledge_geography %>
-  </div>
-
-<!-- There are two History columns. This may be a problem. -->
-  <div class="field">
-    <%= label_tag "Knowledge (History)" %>
-    <%= number_field_tag :knowledge_history %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Local)" %>
-    <%= number_field_tag :knowledge_local %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Nature)" %>
-    <%= number_field_tag :knowledge_nature %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Nobility)" %>
-    <%= number_field_tag :knowledge_nobility %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Custom 1)" %>
-    <%= text_field_tag :knowledge_custom_1_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :knowledge_custom_1 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Custom 2)" %>
-    <%= text_field_tag :knowledge_custom_2_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :knowledge_custom_2 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Knowledge (Custom 3)" %>
-    <%= text_field_tag :knowledge_custom_3_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :knowledge_custom_3 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Listen" %>
-    <%= number_field_tag :listen %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Move Silently" %>
-    <%= number_field_tag :move_silently %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Open Lock" %>
-    <%= number_field_tag :open_lock %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "1st Perform Focus" %>
-    <%= text_field_tag :perform_1_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :perform_1 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "2nd Perform Focus" %>
-    <%= text_field_tag :perform_2_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :perform_2 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "3rd Perform Focus" %>
-    <%= text_field_tag :perform_3_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :perform_3 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "4th Perform Focus" %>
-    <%= text_field_tag :perform_4_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :perform_4 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "5th Perform Focus" %>
-    <%= text_field_tag :perform_5_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :perform_5 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "6th Perform Focus" %>
-    <%= text_field_tag :perform_6_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :perform_6 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Pick Pocket" %>
-    <%= number_field_tag :pick_pocket %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "1st Profession Focus" %>
-    <%= text_field_tag :profession_1_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :profession_1 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "2nd Profession Focus" %>
-    <%= text_field_tag :profession_2_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :profession_2 %>         
-  </div>
-
-  <div class="field">
-    <%= label_tag "3rd Profession Focus" %>
-    <%= text_field_tag :profession_3_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :profession_3 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Read Lips" %>
-    <%= number_field_tag :read_lips %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "1st Ride Focus" %>
-    <%= text_field_tag :ride_1_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :ride_1 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "2nd Ride Focus" %>
-    <%= text_field_tag :ride_2_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :ride_2 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "3rd Ride Focus" %>
-    <%= text_field_tag :ride_3_focus %>
-    <%= label_tag "Score" %>
-    <%= number_field_tag :ride_3 %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Search" %>
-    <%= number_field_tag :search %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Sense Motive" %>
-    <%= number_field_tag :sense_motive %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Spot" %>
-    <%= number_field_tag :spot %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Swim" %>
-    <%= number_field_tag :swim %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Tumble" %>
-    <%= number_field_tag :tumble %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Use Rope" %>
-    <%= number_field_tag :use_rope %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Weavesight" %>
-    <%= number_field_tag :Weavesight %>
-  </div>
-
-  <div class="field">
-    <%= label_tag "Wilderness Lore" %>
-    <%= number_field_tag :wilderness_lore %>
-  </div>
+</div>
+<% end %>
 
 
+
+<!-- -->
+
+<center>
   <div class="actions">
     <%= submit_tag "Update" %>
   </div>
+</center>
 
 
 <% end %>

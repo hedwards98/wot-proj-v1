@@ -18,7 +18,7 @@
 	      <h3>Algai'd'siswai</h3>
 	      <br />
 
-	      <p>bla bla bla bla bla</p>
+	      <p>Algai'd'siswai are brave Aiel warriors from the burning wastes of the "Three-fold Land".</p>
 	      <br />  
 
 	      <a href="#" data-toggle="modal" data-target="#myModal_Algai">
@@ -36,13 +36,27 @@
 		        <h4 class="modal-title" id="myModalLabel">Algai'd'siswai</h4>
 		      </div>
 		      <div class="modal-body">
-		        <p>hey!!!</p>
+
+		        <h4>Suggested Abilities:</h4>
+		        <p>Strength and Dexterity are important for Algai'd'siswai.</p>
+		        <br/>
+
+		        <h4>Suggested Skills:</h4>
+		        <p>Balance (Dex), Climb (Str), Hide (Dex), Craft (Int), Intimidate (Cha)</p>
+		        <br/>
+
+		        <h4>Class Features:</h4>
+		        <p><b>Weapon and Armor Proficiency:</b> Proficient with all simple weapons except the short sword. <i>Algai'd'siswai</i> despise swords, and will not generally even touch one.</p>
+		        <p><b>Fast Movement:</b> The <i>Algai'd'siswai</i> has a speed faster than the norm by +10 feet.</p>
+
 		      </div>
 		      <div class="modal-footer">
 		      	<% if @character.background == "Aiel" %>
 			      	<%= link_to changeclass1_path(class_1: "Algai'd'siswai") do %>
 			  			<div class="btn btn-default">Choose Class</div>
-			 		<% end %>
+			  		<% end %>
+			  	<% else %>
+			  			<p>Class unavailable. Only Aiel can be Algai'd'siswai.</p>
 			 	<% end %>
 		      </div>
 		    </div>
@@ -65,7 +79,7 @@
 	      <h3>Armsman</h3>
 	      <br />
 
-	      <p>bla bla bla bla bla</p>
+	      <p>Armsmen are tough martial warriors skilled with weaponry and combat.</p>
 	      <br />  
 
 	      <a href="#" data-toggle="modal" data-target="#myModal_Armsman">
@@ -83,7 +97,7 @@
 		        <h4 class="modal-title" id="myModalLabel">Armsman</h4>
 		      </div>
 		      <div class="modal-body">
-		        <p>hey!!!</p>
+		        <p>(COMING SOON)</p>
 		      </div>
 		      <div class="modal-footer">
 		      	<%= link_to changeclass1_path(class_1: "Armsman") do %>
@@ -110,7 +124,7 @@
 	      <h3>Initiate</h3>
 	      <br />
 
-	      <p>bla bla bla bla bla</p>
+	      <p>Initiates are well-trained and respected Channelers of the One Power.</p>
 	      <br />  
 
 	      <a href="#" data-toggle="modal" data-target="#myModal_Initiate">
@@ -128,7 +142,20 @@
 		        <h4 class="modal-title" id="myModalLabel">Initiate</h4>
 		      </div>
 		      <div class="modal-body">
-		        <p>hey!!!</p>
+		    
+		      	<h4>Suggested Abilities:</h4>
+		        <p>Intelligence and Wisdom</p>
+		        <br/>
+
+		        <h4>Suggested Skills:</h4>
+		        <p>Composure (Wis), Decipher Script (Int), Diplomacy (Cha), Weavesight (Int)</p>
+		        <br/>
+
+		        <h4>Class Features:</h4>
+		        <p><b>Weapon and Armor Proficiency:</b> Proficient with the club and dagger.</p>
+		        <p><b>The One Power:</b> Initiates, like Wilders, draw upon the five powers of the True Source to cast arcane weaves.</p>
+		        <p><b>Tradition and Mentor:</b> Every Initiate is a member of one of four traditions: The Aes Sedai, The Wise Ones of the Aiel, The Atha'an Miere Wavefinders, or the Asha'man.</p>
+		    
 		      </div>
 		      <div class="modal-footer">
 		      	<% if @character.background != "Ogier" %>
@@ -159,7 +186,7 @@
 	      <h3>Noble</h3>
 	      <br />
 
-	      <p>bla bla bla bla bla</p>
+	      <p>Nobles use their intelligence and natural charisma to make their way in the world.</p>
 	      <br />  
 
 	      <a href="#" data-toggle="modal" data-target="#myModal_Noble">
@@ -177,7 +204,9 @@
 		        <h4 class="modal-title" id="myModalLabel">Noble</h4>
 		      </div>
 		      <div class="modal-body">
-		        <p>hey!!!</p>
+		        
+		      	<p>(COMING SOON)</p>
+
 		      </div>
 		      <div class="modal-footer">
 			    <%= link_to changeclass1_path(class_1: "Noble") do %>
@@ -204,7 +233,7 @@
 	      <h3>Wilder</h3>
 	      <br />
 
-	      <p>bla bla bla bla bla</p>
+	      <p>Wilders are innate Channelers who use the One Power without guidance.</p>
 	      <br />  
 
 	      <a href="#" data-toggle="modal" data-target="#myModal_Wilder">
@@ -222,7 +251,7 @@
 		        <h4 class="modal-title" id="myModalLabel">Wilder</h4>
 		      </div>
 		      <div class="modal-body">
-		        <p>hey!!!</p>
+		        <p>(COMING SOON)</p>
 		      </div>
 		      <div class="modal-footer">
 		      	<% if @character.background != "Ogier" %>
@@ -253,7 +282,7 @@
 	      <h3>Woodsman</h3>
 	      <br />
 
-	      <p>bla bla bla bla bla</p>
+	      <p>Woodsmen are skilled hunters and stalkers who know the wilds like home.</p>
 	      <br />  
 
 	      <a href="#" data-toggle="modal" data-target="#myModal_Woodsman">
@@ -271,7 +300,7 @@
 		        <h4 class="modal-title" id="myModalLabel">Woodsman</h4>
 		      </div>
 		      <div class="modal-body">
-		        <p>hey!!!</p>
+		        <p>(COMING SOON)</p>
 		      </div>
 		      <div class="modal-footer">
 			    <%= link_to changeclass1_path(class_1: "Woodsman") do %>

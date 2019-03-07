@@ -5,11 +5,11 @@
 
 
 		<div class="col-md-5">
-			<div class="well">
+			<div class="panel panel-default">
 
 				<div class="media">
 				  <div class="media-left">
-				  	<img class="media-object" src="..." alt="...">
+				  	<img class="media-object" src="<%= image_url('blank.png') %>" alt="..." height="78" width="78">
 				  </div>
 				  <div class="media-body">
 				    <h3><%= @character.char_name %></h3>
@@ -17,12 +17,12 @@
 					<p><%= @character.level %> <%= @character.background %> <%= @character.class_1 %></p>
 				  </div>
 				</div>
-				
+
 			</div>
 		</div>
 
 		<div class="col-md-5">
-			<div class="well">
+			<div class="panel panel-default">
 			<center>
 				<p>HP: 13 ------ Defense: 10</p>
 				<p>Fortitude: 10 ------ Reflex: 10 ------ Will: 10</p>
@@ -31,7 +31,7 @@
 		</div>
 
 		<div class="col-md-2">
-			<div class="well">
+			<div class="panel panel-default" style="height: 9000">
 				<p>Speed: 10</p>
 				<p>Initiative: 10</p>
 			</div>
@@ -86,27 +86,12 @@
 				    <th>CHA</th>
 				  </tr>
 				  <tr>
-				    <td>?</td>
-				    <td>?</td>
-				    <td>?</td>
-				    <td>?</td>
-				    <td>?</td>
+				    <td><%= @character.str %></td>
+				    <td><%= @character.dex %></td>
+				    <td><%= @character.int %></td>
+				    <td><%= @character.wis %></td>
+				    <td><%= @character.cha %></td>
 				  </tr>
-				</table>
-				<table class="table">
-					<tr>
-						
-					</tr>
-					<tr>
-						<td>Skill 1</td>
-						<td>Skill 2</td>
-						<td>Skill 1</td>
-						<td>Skill 2</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>5</td>
-					</tr>
 				</table>
   			</div>
   		</div>
